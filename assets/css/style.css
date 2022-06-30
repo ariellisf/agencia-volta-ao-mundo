@@ -1,0 +1,313 @@
+/* CSS do Cabecalho */
+.cabecalho {
+  align-items: center;
+  background: rgb(179, 210, 227);
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+}
+
+.logo-cabecalho {
+  width: 150px;
+  margin-left: 50px;
+}
+
+.menu-lista {
+  display: flex;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-link {
+  color: rgb(49, 155, 212);
+  margin-right: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-link:hover {
+  color: rgb(24, 86, 119);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* CSS do Banner */
+
+.banner {
+  position: relative;
+}
+
+.banner-imagem {
+  width: 100%;
+  border: none;
+}
+
+.banner-titulo {
+  color: white;
+  font-family: "Pacifico", cursive;
+  position: absolute;
+  left: 50%;
+  text-shadow: 0 4px 4px rgb(24, 86, 119);
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/* CSS do Sobre */
+
+.sobre {
+  text-align: center;
+}
+
+.sobre-titulo {
+  font-family: "Pacifico", cursive;
+  color: rgb(49, 155, 212);
+}
+
+.sobre-descricao {
+  color: #595959;
+  font-weight: 50;
+}
+
+/* CSS dos Pacotes */
+
+.pacotes {
+  background: rgb(179, 210, 227);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pacote {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+  align-items: center;
+  border: 2px dotted rgb(24, 86, 119);
+  background: rgb(207, 225, 235);
+  text-align: center;
+}
+
+.pacote-imagem {
+  width: 265px;
+  height: 220.828px;
+  margin-top: 15px;
+  box-shadow: 2px 2px 5px 2px rgb(24, 86, 119);
+}
+
+.pacote-titulo {
+  font-size: 1.4375em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(49, 155, 212);
+  font-weight: bold;
+  text-shadow: 2px 2px white;
+}
+
+.pacote-descricao {
+  font-size: 1.1875em;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pacote-botao {
+  border: 2px solid rgb(24, 86, 119);
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 5px;
+  background: rgb(179, 210, 227);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.pacote-botao:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* CSS Quem Somos */
+
+.quem-somos {
+  text-align: center;
+  padding: 1em;
+}
+
+.quem-somos-titulo {
+  margin-bottom: 0.75em;
+  color: rgb(24, 86, 119);
+  font-size: 3.1875em;
+  font-family: "Pacifico", cursive;
+  text-shadow: 2px 2px rgb(179, 210, 227);
+}
+
+.quem-somos-descricao {
+  font-weight: 100;
+  font-size: 1.4em;
+  font-family: "Montserrat", sans-serif;
+  color: #706f6f;
+}
+
+.pessoas {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+.pessoa {
+  display: flex;
+  flex-direction: column;
+}
+
+.pessoa-imagem {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-position: center;
+  border-radius: 100%;
+}
+
+.pessoa-imagem-arielli {
+  background-image: url("../img/arielli.jpeg");
+}
+
+.pessoa-imagem-ivone {
+  background-image: url("../img/ivone.jpeg");
+}
+
+.pessoa-imagem-arios {
+  background-image: url("../img/arios.jpeg");
+}
+
+.pessoa-imagem-fernando {
+  background-image: url("../img/fernando.jpeg");
+}
+
+.pessoa-nome {
+  margin: 1em 0;
+  font-family: "Pacifico", cursive;
+  color: rgb(24, 86, 119);
+  font-size: 2em;
+}
+
+.pessoa-funcao {
+  color: #706f6f;
+  font-size: 1.25em;
+}
+
+/* CSS do Rodape */
+
+.rodape {
+  background: rgb(24, 86, 119);
+  color: white;
+  text-align: right;
+  padding: 1.2rem 5rem;
+  text-transform: lowercase;
+}
+
+@media screen and (min-width: 0) {
+  .cabecalho {
+    padding: 0 rem;
+    justify-content: center;
+  }
+  .logo-cabecalho {
+    display: none;
+  }
+
+  .banner-titulo {
+    font-size: 3em;
+  }
+
+  .banner-imagem {
+    height: calc(100vh - 51px);
+  }
+
+  .sobre {
+    padding: 2.5em 1em;
+  }
+
+  .sobre-titulo {
+    font-size: 2em;
+  }
+
+  .sobre-descricao {
+    font-size: 1.2em;
+  }
+
+  .pacotes {
+    padding: 5em 0 0 1em;
+  }
+
+  .pacote {
+    margin-right: 1em;
+    width: 100%;
+  }
+
+  .pessoas {
+    flex-direction: column;
+  }
+
+  .pessoa {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cabecalho {
+    padding: 0 5em;
+    justify-content: space-between;
+  }
+  .logo-cabecalho {
+    display: block;
+  }
+
+  .banner-titulo {
+    font-size: 5em;
+  }
+
+  .banner-imagem {
+    height: calc(100vh - 150px);
+  }
+
+  .sobre {
+    padding: 2.5em;
+  }
+
+  .sobre-titulo {
+    font-size: 3.1em;
+  }
+
+  .sobre-descricao {
+    font-size: 1.5em;
+  }
+
+  .pacotes {
+    padding: 5em 0 0 2.5em;
+  }
+
+  .pacote {
+    margin-right: 2.5em;
+    width: calc(33% - 2.5em);
+  }
+
+  .pessoas {
+    flex-direction: row;
+  }
+
+  .pessoa {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and(min-width: 992px) {
+  .pacotes {
+    padding: 3em 0 0 3em;
+  }
+  .pacote {
+    margin-right: 3em;
+    width: calc(32% - 3em);
+  }
+}
